@@ -1,0 +1,12 @@
+# Ignore môi trường & hệ thống
+.env
+.DS_Store
+*.log
+
+# Ignore node_modules & build
+/backend/node_modules/
+/frontend/node_modules/
+/frontend/build/
+
+# Ignore các file hệ thống khác (nếu có)
+.vscode/

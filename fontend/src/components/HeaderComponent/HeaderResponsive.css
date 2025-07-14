@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+.search-icon:hover {
+  color: #1890ff;
+}
+
+
+.cart-icon {
+  font-size: 24px;
+}
+
+.cart-link {
+  color: inherit;
+  margin-right: 10px;
+}
+
+.login-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.username {
+  font-size: 14px;
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: inline-block;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .header-center {
+    flex: 1;
+    justify-content: center;
+  }
+}
